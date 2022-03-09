@@ -37,8 +37,63 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
-    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    "baseUrl": "./", /* Base directory to resolve non-absolute module names. */
+    "paths": { /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@locales": [
+        "src/locales"
+      ],
+      "@locales/*": [
+        "src/locales/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@routes": [
+        "src/routes"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@navigator": [
+        "src/navigator"
+      ],
+      "@navigator/*": [
+        "src/navigator/*"
+      ],
+      "@store": [
+        "src/store"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@errors": [
+        "src/errors"
+      ],
+      "@errors/*": [
+        "src/errors/*"
+      ],
+      "@models": [
+        "src/models"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@lib": [
+        "src/lib"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+    },                          /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "types": [],                           /* Type declaration files to be included in compilation. */
