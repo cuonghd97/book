@@ -26,6 +26,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import HelloWorld from '@/components/hello-world/HelloWorld';
 
 const Section: React.FC<{
   title: string;
@@ -33,6 +34,7 @@ const Section: React.FC<{
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
+      <HelloWorld />
       <Text
         style={[
           styles.sectionTitle,
